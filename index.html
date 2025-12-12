@@ -5,39 +5,9 @@
   </head>
   <body>
     <div class="login-page">
-      <img
-        src="logo-removebg-preview.png"
-        class="login-logo"
-      />
+      <img src="ph/logo-removebg-preview.png" class="login-logo" />
 
       <form action="coffee hub.html" class="login-form">
-        <div>
-          <input
-            type="text"
-            name="firstname"
-            placeholder="First Name"
-            required
-            maxlength="15"
-          />
-        </div>
-        <div>
-          <input
-            type="text"
-            name="lastname"
-            placeholder="Last Name"
-            required
-            maxlength="15"
-          />
-        </div>
-        <div>
-          <input
-            type="text"
-            name="phonenumber"
-            placeholder="Phone Number"
-            required
-            maxlength="11"
-          />
-        </div>
         <div>
           <input type="email" name="email" placeholder="Email" required />
         </div>
@@ -50,23 +20,14 @@
             minlength="8"
           />
         </div>
-        <div>
-          <input
-            type="password"
-            name="password"
-            placeholder="Confirm Password"
-            required
-            minlength="8"
-          />
+        <div class="sign-up" style="display: flex;" align-items="center" gap="10px">
+          <p>Are you a new visitor ?</p>
+          <a href="register.html"><h3>Register Now</h3></a>
         </div>
         <div>
-          <input type="address" name="address" placeholder="Address" />
-        </div>
-        <div>
-          <button class="sign-up-btn">Sign Up</button>
+          <button class="sign-up-btn">Login</button>
         </div>
       </form>
     </div>
-    
   </body>
 </html>
