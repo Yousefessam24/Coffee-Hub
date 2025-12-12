@@ -58,7 +58,7 @@ a {
   align-items: center;
   max-width: 1200px;
   margin: auto;
-  height: 97px;
+  height: 100px;
 }
 
 #header .navbar .logo {
@@ -79,6 +79,7 @@ a {
 
 #header .navbar ul li a:hover {
   color: var(--light-brown);
+  font-size: larger ;
 }
 
 span {
@@ -169,12 +170,11 @@ span {
 }
 
 #menu {
-  background-image: url(Gemini_Generated_Image_el7i03el7i03el7i.png)
+  background-image: url(ph/Gemini_Generated_Image_el7i03el7i03el7i.png);
 }
 
-
 #best-sellers {
-  background-image: url(vip.jpg);
+  background-image: url(ph/vip.jpg);
   background-size: cover;
 
   background-repeat: no-repeat;
@@ -228,7 +228,6 @@ span {
   box-shadow: 4px 8px rgba(0, 0, 0, 0.2);
   font-size: x-large;
   font-weight: 900;
-  
 }
 .best-sellers-products2 {
   background-color: var(--bg-color);
@@ -247,14 +246,13 @@ span {
   background-color: var(--bg-color);
   width: 20%;
   border-radius: 17px;
-font-weight: 900;
+  font-weight: 900;
   text-align: center;
   color: #1f2226;
   height: 520 px;
   padding-bottom: 20px;
   box-shadow: 4px 8px rgba(0, 0, 0, 0.2);
-  font-size: x-large
-  
+  font-size: x-large;
 }
 
 .best-sellers-products {
@@ -282,12 +280,11 @@ font-weight: 900;
 
 /* home start */
 #home {
-  background-image: url("Gemini_Generated_Image_8wrzt18wrzt18wrz.png");
+  background-image: url(ph/Gemini_Generated_Image_8wrzt18wrzt18wrz.png);
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
   background-position: center;
-  
 }
 
 #home .home-content {
@@ -310,6 +307,25 @@ font-weight: 900;
   margin: 20px 0;
   line-height: 1.3;
   color: var(--bg-color);
+  background-image: url(ph/tb.avif);
+  background-clip: text;
+  background-size: 300% 300%;
+  color: transparent;
+  animation: animate 10s ease infinite;
+}
+
+@keyframes animate{
+  0%{
+    background-position: 0%;
+  }
+
+  50%{
+    background-position: 100%;
+  }
+
+  100%{
+    background-position: 0%;
+  }
 }
 
 #home .home-content .content-text p {
@@ -348,7 +364,7 @@ font-weight: 900;
   background-color: var(--bg-color);
   padding: 6rem 0;
   text-align: center;
-  background-image: url(Gemini_Generated_Image_pe2tc8pe2tc8pe2t.png);
+  background-image: url(ph/Gemini_Generated_Image_pe2tc8pe2tc8pe2t.png);
   background-size: cover;
 
   background-repeat: no-repeat;
@@ -357,17 +373,15 @@ font-weight: 900;
   aspect-ratio: 2816/1536;
 }
 
-#contact .row{
+#contact .row {
   display: grid;
   grid-template-columns: 2fr 1.4fr;
   margin-top: 2rem;
-  
 }
 
 #contact .row .contact-content {
   background-color: white;
   padding: 2.5rem;
-  
 }
 
 #contact .row .contact-content h3 {
@@ -394,23 +408,22 @@ font-weight: 900;
   text-transform: uppercase;
   cursor: pointer;
   border: none;
-transition: all 0.3s ease;
-font-weight: 600;
+  transition: all 0.3s ease;
+  font-weight: 600;
 }
-
 
 #contact .row .contact-content form .btn-submit:hover {
   background-color: var(--light-brown);
   color: black;
 }
 
-#contact .map iframe{
+#contact .map iframe {
   width: 100%;
   height: 100%;
   border: 10px solid #1f2226;
 }
 
-#contact .heading{
+#contact .heading {
   margin-bottom: 40px;
   background-color: var(--light-brown);
   height: auto;
@@ -437,16 +450,16 @@ font-weight: 600;
   font-family: oswald, sans-serif;
 }
 
-#footer .top{
+#footer .top {
   padding: 6rem 0;
-  background-image: url(footer-bg.png);
+  background-image: url(ph/footer-bg.png);
   color: white;
   text-align: left;
   align-items: center;
   margin: auto;
 }
 
-#footer .top .row{
+#footer .top .row {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   gap: 3rem;
@@ -456,44 +469,41 @@ font-weight: 600;
   margin: auto;
 }
 
-#footer .top .row .col h3{
+#footer .top .row .col h3 {
   color: white;
   margin-bottom: 15px;
   text-align: left;
 }
 
-#footer .top .row .col p{
+#footer .top .row .col p {
   width: 400px;
   line-height: 1.6;
 }
 
-#footer .top .row .col ul li{
+#footer .top .row .col ul li {
   margin: 20px 0;
 }
 
-#footer .top .row .col ul li i{
+#footer .top .row .col ul li i {
   margin-right: 10px;
 }
 
-
-#footer .top .cont .row .col ul li i a{
+#footer .top .cont .row .col ul li i a {
   color: white;
- 
 }
 
-
-#footer .copy{
+#footer .copy {
   background-color: var(--dark-gray);
   padding: 30px 0;
   text-align: center;
   color: white;
 }
 
-#footer .copy p{
+#footer .copy p {
   font-weight: 500;
 }
 
-#footer .copy p a{
+#footer .copy p a {
   color: var(--light-brown);
   font-weight: 600;
 }
