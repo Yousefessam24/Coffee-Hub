@@ -1,33 +1,51 @@
 <html>
-  <head>
-    <title>login</title>
-    <link rel="stylesheet" href="login.css" />
-  </head>
-  <body>
-    <div class="login-page">
-      <img src="ph/logo-removebg-preview.png" class="login-logo" />
+  <div class="main-con">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>login</title>
+      <link rel="stylesheet" href="login.css" />
+    </head>
+    <body>
+      <section>
+        <div class="form-box">
+          <div class="form-value">
+            <form action="coffee hub.html">
+              <h2>Login</h2>
+              <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" required />
+                <label for="">Email</label>
+              </div>
+              <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" required />
+                <label for="">Password</label>
+              </div>
+              <div class="forget">
+                <label for="">
+                  <input type="checkbox" />Remember me
+                  <a href="#">Forget Password</a>
+                </label>
+              </div>
+              <button>Log in</button>
+              <div class="register">
+                <p>
+                  Don't have an account <a href="register.html">Register</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
 
-      <form action="coffee hub.html" class="login-form">
-        <div>
-          <input type="email" name="email" placeholder="Email" required />
-        </div>
-        <div>
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            required
-            minlength="8"
-          />
-        </div>
-        <div class="sign-up" style="display: flex;" align-items="center" gap="10px">
-          <p>Are you a new visitor ?</p>
-          <a href="register.html"><h3>Register Now</h3></a>
-        </div>
-        <div>
-          <button class="sign-up-btn">Login</button>
-        </div>
-      </form>
-    </div>
-  </body>
+        <script
+          type="module"
+          src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+          nomodule
+          src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+        ></script>
+      </section>
+    </body>
+  </div>
 </html>
