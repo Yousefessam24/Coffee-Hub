@@ -133,7 +133,7 @@ button {
 /* responsive */
 @media (min-width: 100px) and (max-width: 600px) {
   .form-box {
-    width: 85%;
+    width: 93%;
   }
   
 }
