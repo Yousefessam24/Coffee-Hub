@@ -134,6 +134,8 @@ button {
 @media (min-width: 100px) and (max-width: 600px) {
   .form-box {
     width: 93%;
+    
   }
+  
   
 }
