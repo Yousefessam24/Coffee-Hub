@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+* {
+  outline: 1px solid red !important;
+}
+
 :root {
   --bg-color: #f1f1f1;
   --bg-secondary: #fbfbfb;
@@ -518,17 +522,32 @@ html {
 }
 
 @media (max-width: 600px) {
+  
+  /* إزالة أي تحديد للعرض على الـ body لكي يأخذ عرض الشاشة بالكامل */
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /* لمنع السكرول الجانبي */
+  }
+
   #header .navbar {
     flex-direction: column;
-    height: 175px;
+    height: auto; /* الأفضل جعل الطول تلقائي بناء على المحتوى */
+    padding-bottom: 20px;
+    width: 100%;
+    padding: 0;
   }
+
   #header .navbar .logo {
-    margin-bottom: 0px;
+    margin-bottom: 10px;
   }
+
   #header .navbar .lr {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 0; 
+    visibility: hidden;  
   }
 
   #header .navbar .lr li:nth-child(2) {
@@ -536,42 +555,68 @@ html {
   }
 
   #header .navbar ul {
-    margin-bottom: 55px;
+    margin-bottom: 20px;
+    padding: 0;
   }
 
   #home {
-    min-height: 100vh;
-    width: 100%;
-    height: 200vh;
+    min-height: 100vh; /* يفضل min-height بدلاً من height ثابت */
     width: 100%;
     background-position: center;
     background-size: cover;
+    /* justify-content تعمل فقط مع display: flex تأكد أن الأب flex */
+    display: flex; 
+    flex-direction: column;
     justify-content: center;
-    background-attachment: fixed;
-    width: 82vh;
   }
 
-  #home img{
-    object-fit: contain;
-  }
-
-  .container{
+  /* تصحيح الحاويات لتأخذ عرض الشاشة الصحيح */
+  #home .container,
+  #home .home-content {
     width: 100%;
+    max-width: 100%; /* تم التغيير من 50vh إلى 100% */
+    padding: 0 20px; /* إضافة مسافة داخلية بدلاً من المارجن لضمان عدم الخروج عن الشاشة */
   }
 
   #home .home-content .content-text h1 {
-   margin-top:40vh ;
-   margin-left: 5vh;
+    margin-top: 10vh; /* تقليل المسافة العلوية للموبايل */
+    font-size: 2.2rem; /* حجم خط مناسب للموبايل */
+    margin-left: 0; /* إلغاء المارجن اليسار واستخدام الـ padding للأب */
+    text-align: left;
+     /* أو center حسب التصميم */
+  }
+
+  #home .home-content .content-text p {
+    font-size: 0.9rem;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  #home .home-content .content-text .btn {
+    margin-left: 0;
+    margin-top: 30px;
+    display: inline-block;
+    width: 13rem;
+  }
+
+  html, body {
+  max-width: 100%;
+  overflow-x: hidden; /* هذا يمنع السكرول العرضي ويخفي الزيادات */
+}
+
+#header .navbar ul li a {
+  font-size: 0.8rem;
+  margin: 5px 10px;
   
-  }
+}
 
-  #home .home-content .content-text p{
-    margin-left: 5vh;
-    font-size: 1.4rem;
-  }
+#header .navbar ul li.login,
+#header .navbar ul li.signup{
+  visibility: hidden;
+}
 
-  #home .home-content .content-text .btn{
-    margin-left: 5vh;
-    margin-top: 7vh;
-  }
+#home .home-content .content-text h3{
+  visibility: hidden;
+  font-size: 0;
+}
 }
