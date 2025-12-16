@@ -4,8 +4,6 @@
   box-sizing: border-box;
 }
 
-
-
 :root {
   --bg-color: #f1f1f1;
   --bg-secondary: #fbfbfb;
@@ -465,11 +463,23 @@ span {
 #footer .top .row {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  gap: 3rem;
+  gap: 1rem;
   max-width: 1200px;
   align-items: left;
   text-align: left;
   margin: auto;
+}
+
+#footer .top .row .col {
+  width: 18rem;
+}
+
+#footer .top .row .al .col {
+  width: 8rem;
+}
+
+#footer .top .row .al .col .li {
+  margin-right: 10rem;
 }
 
 #footer .top .row .col h3 {
@@ -479,7 +489,6 @@ span {
 }
 
 #footer .top .row .col p {
-  width: 400px;
   line-height: 1.6;
 }
 
@@ -519,8 +528,12 @@ html {
   display: flex;
 }
 
+#footer .top .row .al {
+  display: flex;
+  gap: 14rem;
+}
+
 @media (max-width: 600px) {
-  
   /* إزالة أي تحديد للعرض على الـ body لكي يأخذ عرض الشاشة بالكامل */
   body {
     width: 100%;
@@ -538,14 +551,16 @@ html {
 
   #header .navbar .logo {
     margin-bottom: 10px;
+    height: 7vh;
+    width: auto;
   }
 
   #header .navbar .lr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 0; 
-    visibility: hidden;  
+    width: 0;
+    visibility: hidden;
   }
 
   #header .navbar .lr li:nth-child(2) {
@@ -558,7 +573,7 @@ html {
     height: 1rem;
   }
 
-  #header .navbar ul li{
+  #header .navbar ul li {
     height: auto;
   }
 
@@ -568,7 +583,7 @@ html {
     background-position: center;
     background-size: cover;
     /* justify-content تعمل فقط مع display: flex تأكد أن الأب flex */
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: center;
   }
@@ -582,11 +597,11 @@ html {
   }
 
   #home .home-content .content-text h1 {
-    margin-top: 10vh; /* تقليل المسافة العلوية للموبايل */
+    margin-top: 5vh; /* تقليل المسافة العلوية للموبايل */
     font-size: 2.4rem; /* حجم خط مناسب للموبايل */
     margin-left: 0; /* إلغاء المارجن اليسار واستخدام الـ padding للأب */
     text-align: left;
-     /* أو center حسب التصميم */
+    /* أو center حسب التصميم */
   }
 
   #home .home-content .content-text p {
@@ -602,198 +617,237 @@ html {
     width: 13rem;
   }
 
-  html, body {
-  max-width: 100%;
-  overflow-x: hidden; /* هذا يمنع السكرول العرضي ويخفي الزيادات */
-}
-
-#header .navbar ul li a {
-  font-size: 0.8rem;
-  margin: 5px 10px;
-  
-}
-
-#header .navbar ul li.login,
-#header .navbar ul li.signup{
-  visibility: hidden;
-}
-
-#home .home-content .content-text h3{
-  visibility: hidden;
-  font-size: 0;
-}
-
-#menu .heading{
-  width: 80%;
-}
-
-#menu .heading h2{
-  font-size: 23px;
-}
-
-#menu{
-  padding: 10rem 0;
-}
-
-#menu .row .col .item{
-  width: 95%;
-  margin-left: .7rem;
-  padding-right: 10px;
-}
-
-#menu .row .col .item img{
-  width: 4rem;
-  height: 4rem;
-  margin: 0;
-  margin-top: 0.5rem;
-}
-
-#menu .row{
-  gap: 1rem;
-  display: block;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-}
-
-#menu .row .col{
-  align-items: center;
-}
-
-#menu{
-  background-image: none;
-}
-
-#menu .row .col .item .details h3{
-  margin-bottom: 0.8rem;
-  font-size: 17px;
-}
-
-#menu .row .col .item .details p{
-  font-size: 11px;
-}
-
-#menu .row .col .item .price{
-  padding-right: 10px;
-}
-
-#header .navbar ul li a:hover {
-  color: var(--light-brown);
-  font-size: 0.8rem;
-}
-
-.best-sellers-heading{
-  width: 80%;
-  margin-top: 1.2rem;
-}
-
-.best-sellers-span{
-  font-size: 15px;
-}
-
-#best-sellers{
-  height: 182vh;
-  flex-direction: column;
-}
-
-#best-sellers h1{
-  font-size: 17px;
-}
-
-.best-sellers-container{
-  flex-direction: column;
-}
-
-.best-sellers-products{
-  flex-direction: column;
-  align-items: center;
-  margin-top: 2.5rem;
-}
-
-.best-sellers-products1{
-  width: 55%;
-  height: 43vh;
-  max-width: 60%;
-}
-
-.best-sellers-products2{
-  width: 55%;
-  height: 43vh;
-  max-width: 60%;
-}
-
-.best-sellers-products3{
-  width: 55%;
-  height: 43vh;
-  max-width: 60%;
-}
-
-.best-sellers-img{
-  padding: 5px;
-  width: 100%;
-  height: 28vh;
-  object-fit: cover;
-}
-
-.best-sellers-products p{
-  font-size: 1rem;
-  margin-top: 0.1rem;
-}
-
-.order-btn{
-  font-weight: 600;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden; /* هذا يمنع السكرول العرضي ويخفي الزيادات */
+  }
+
+  #header .navbar ul li a {
+    font-size: 0.8rem;
+    margin: 5px 10px;
+  }
+
+  #header .navbar ul li.login,
+  #header .navbar ul li.signup {
+    visibility: hidden;
+  }
+
+  #home .home-content .content-text h3 {
+    visibility: hidden;
+    font-size: 0;
+  }
+
+  #menu .heading {
+    width: 80%;
+    margin-top: -2.5rem;
+  }
+
+  #menu .heading h2 {
+    font-size: 23px;
+  }
+
+  #menu {
+    padding: 10rem 0;
+  }
+
+  #menu .row .col .item {
+    width: 95%;
+    margin-left: 0.7rem;
+    padding-right: 10px;
+  }
+
+  #menu .row .col .item img {
+    width: 4rem;
+    height: 4rem;
+    margin: 0;
+    margin-top: 0.5rem;
+  }
+
+  #menu .row {
+    gap: 1rem;
+    display: block;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  #menu .row .col {
+    align-items: center;
+  }
+
+  #menu {
+    background-image: none;
+  }
+
+  #menu .row .col .item .details h3 {
+    margin-bottom: 0.8rem;
+    font-size: 17px;
+  }
+
+  #menu .row .col .item .details p {
+    font-size: 11px;
+  }
+
+  #menu .row .col .item .price {
+    padding-right: 10px;
+  }
+
+  #header .navbar ul li a:hover {
+    color: var(--light-brown);
+    font-size: 0.8rem;
+  }
+
+  .best-sellers-heading {
+    width: 80%;
+    margin-top: -1.8rem;
+  }
+
+  .best-sellers-span {
+    font-size: 15px;
+  }
+
+  #best-sellers {
+    height: 182vh;
+    flex-direction: column;
+  }
+
+  #best-sellers h1 {
+    font-size: 17px;
+  }
+
+  .best-sellers-container {
+    flex-direction: column;
+  }
+
+  .best-sellers-products {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+  }
+
+  .best-sellers-products1 {
+    width: 55%;
+    height: 43vh;
+    max-width: 60%;
+  }
+
+  .best-sellers-products2 {
+    width: 55%;
+    height: 43vh;
+    max-width: 60%;
+  }
+
+  .best-sellers-products3 {
+    width: 55%;
+    height: 43vh;
+    max-width: 60%;
+  }
+
+  .best-sellers-img {
+    padding: 5px;
+    width: 100%;
+    height: 28vh;
+    object-fit: cover;
+  }
+
+  .best-sellers-products p {
+    font-size: 1rem;
+    margin-top: 0.1rem;
+  }
+
+  .order-btn {
+    font-weight: 600;
+  }
+  #contact .heading {
+    width: 80%;
+    margin-top: 0.2rem;
+  }
+
+  #contact .heading span {
+    font-size: 16px;
+  }
+
+  #contact .heading h2 {
+    font-size: 24px;
+  }
+
+  #contact .row {
+    display: block;
+    width: 100%;
+  }
+
+  #contact .container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #contact .map iframe {
+    width: 100%;
+    height: 400px; /* طول مناسب للخريطة */
+  }
+
+  #footer .top .row .al {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    flex-direction: row;
+  }
+
+  #footer .top .row .col p {
+    visibility: visible;
+    height: auto;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+
+  #footer .top .row {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  #footer .top .row .col h3 {
+    margin: auto;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  #footer .top .row .al .col h3 {
+    white-space: nowrap;
+  }
+
+  #footer .top .row .col {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #footer .top .row .al .col {
+    width: 100%;
+  }
+
+  #footer .top .row .al .col .li {
+    margin-right: 0;
+  }
+
+  #footer .top .row .col ul li {
+    text-align: center;
+  }
+
+  #footer .top .row .col p {
+    visibility: hidden;
+    height: 0;
+  }
+
+  #footer .copy{
+    padding: 30px 20px;
+  }
 }
