@@ -622,4 +622,113 @@ html {
   visibility: hidden;
   font-size: 0;
 }
+
+#menu .heading{
+  width: 80%;
+}
+
+#menu .heading h2{
+  font-size: 23px;
+}
+
+#menu{
+  padding: 10rem 0;
+}
+
+#menu .row .col .item{
+  width: 95%;
+  margin-left: .7rem;
+  padding-right: 10px;
+}
+
+#menu .row .col .item img{
+  width: 4rem;
+  height: 4rem;
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+#menu .row{
+  gap: 1rem;
+  display: block;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+#menu .row .col{
+  align-items: center;
+}
+
+#menu{
+  background-image: none;
+}
+
+#menu .row .col .item .details h3{
+  margin-bottom: 0.8rem;
+  font-size: 17px;
+}
+
+#menu .row .col .item .details p{
+  font-size: 11px;
+}
+
+#menu .row .col .item .price{
+  padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
