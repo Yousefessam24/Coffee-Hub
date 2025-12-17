@@ -17,8 +17,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #f1f1f1;
- }
-  
+}
 
 h1,
 h2,
@@ -90,8 +89,16 @@ span {
 /* header end */
 /* menu section start */
 #menu {
-  background-color: var(--bg-secondary);
-  padding: 6rem 0;
+  background-image: url(ph/ju.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; /* يجعل الصورة ثابتة أثناء السكرول */
+  width: 100%;
+  min-height: 100vh; /* يضمن تغطية الشاشة بالكامل كحد أدنى */
+  display: block; /* يضمن عدم تداخل العناصر */
+  padding-bottom: 50px;
+  /* احذف سطر aspect-ratio نهائياً */
 }
 
 #menu .heading {
@@ -102,7 +109,7 @@ span {
 
   width: 500px;
   height: auto;
-  margin: auto;
+  margin: 6rem auto;
   padding: 20px;
   background-color: rgb(63, 37, 2);
   color: burlywood;
@@ -508,4 +515,153 @@ span {
 
 html {
   scroll-behavior: smooth;
+}
+
+@media (max-width: 600px) {
+  #menu .heading {
+    width: 80%;
+    margin-top: 4.5rem;
+  }
+
+  #menu .heading h2 {
+    font-size: 23px;
+  }
+
+  #menu .row .col .item {
+    width: 95%;
+    margin-left: 0.7rem;
+    padding-right: 10px;
+  }
+
+  #menu .row .col .item img {
+    width: 4rem;
+    height: 4rem;
+    margin: 0;
+    margin-top: 0.5rem;
+  }
+
+  #menu .row {
+    gap: 1rem;
+    display: block;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  #menu .row .col {
+    align-items: center;
+  }
+
+  #menu {
+    background-image: none;
+  }
+
+  #menu::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(ph/smo.webp);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+
+  #menu .row .col .item .details h3 {
+    margin-bottom: 0.8rem;
+    font-size: 17px;
+  }
+
+  #menu .row .col .item .details p {
+    font-size: 11px;
+  }
+
+  #menu .row .col .item .price {
+    padding-right: 10px;
+  }
+
+  #header .navbar ul li a:hover {
+    color: var(--light-brown);
+    font-size: 0.8rem;
+  }
+
+  #header .navbar {
+    flex-direction: column;
+    height: auto; /* الأفضل جعل الطول تلقائي بناء على المحتوى */
+    padding-bottom: 20px;
+    width: 100%;
+    padding: 0;
+  }
+
+  #header .navbar .logo {
+    margin-bottom: 10px;
+    height: 7vh;
+    width: auto;
+  }
+
+  #header .navbar .lr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 0;
+    visibility: hidden;
+  }
+
+  #header .navbar .lr li:nth-child(2) {
+    margin-top: 10px;
+  }
+
+  #header .navbar ul {
+    margin-bottom: 20px;
+    padding: 0;
+    height: 1rem;
+  }
+
+  #header .navbar ul li {
+    height: auto;
+  }
+
+  #body {
+    height: auto;
+    overflow: visible;
+    min-height: 100vh;
+  }
+
+  #menu {
+    min-height: 100vh;
+    overflow: visible;
+    background-image: url(ph/smo.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #menu .heading {
+    width: 90%; /* خليناها أعرض شوية للموبايل */
+    margin-top: 4.5rem;
+  }
+
+  #menu .heading h2 {
+    font-size: 23px;
+  }
+
+  #menu .row {
+    display: block; /* المنيو ينزل تحت بعضه في الموبايل */
+    padding: 0 10px;
+  }
+
+  #menu .row .col .item {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  #header .navbar .logo {
+    width: 180px; /* تصغير اللوجو في الموبايل */
+  }
+
+ #menu .heading{
+  margin-bottom: 2rem;
+ }
 }
