@@ -170,11 +170,11 @@ span {
 }
 
 #menu {
-  background-image: url(ph/Gemini_Generated_Image_el7i03el7i03el7i.png);
+  background-image: url(ph/Gemini_Generated_Image_el7i03el7i03el7i.webp);
 }
 
 #best-sellers {
-  background-image: url(ph/vip.jpg);
+  background-image: url(ph/vip.webp);
   background-size: cover;
 
   background-repeat: no-repeat;
@@ -308,7 +308,7 @@ span {
   margin: 20px 0;
   line-height: 1.3;
   color: var(--bg-color);
-  background-image: url(ph/tb.avif);
+  background-image: url(ph/tb.webp);
   background-clip: text;
   background-size: 300% 300%;
   color: transparent;
@@ -365,7 +365,7 @@ span {
   background-color: var(--bg-color);
   padding: 6rem 0;
   text-align: center;
-  background-image: url(ph/Gemini_Generated_Image_pe2tc8pe2tc8pe2t.png);
+  background-image: url(ph/Gemini_Generated_Image_pe2tc8pe2tc8pe2t.webp);
   background-size: cover;
 
   background-repeat: no-repeat;
@@ -453,7 +453,7 @@ span {
 
 #footer .top {
   padding: 6rem 0;
-  background-image: url(ph/footer-bg.png);
+  background-image: url(ph/footer-bg.webp);
   color: white;
   text-align: left;
   align-items: center;
