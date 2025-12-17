@@ -17,7 +17,7 @@
 
 body {
   background-color: var(--bg-secondary);
-  background-image: url(ph/bmm6.png);
+  background-image: url(ph/Gemini_Generated_Image_el7i03el7i03el7i.webp);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -28,7 +28,6 @@ body {
   height: auto;
   aspect-ratio: 2816/1536;
   overflow: hidden;
-  
 }
 
 .wrapper {
@@ -64,7 +63,6 @@ body {
   color: white;
   display: flex;
   flex-wrap: nowrap;
-  
 }
 
 .card .row .icon {
@@ -76,6 +74,7 @@ body {
   align-items: center;
   margin: 15px;
   width: 50px;
+  opacity: 0;
 }
 
 .card .row .description {
@@ -89,7 +88,6 @@ body {
   transform: translateY(30px);
   transition-delay: 0.3s;
   transition: all 0.3s ease;
-  
 }
 
 .description p {
@@ -109,9 +107,15 @@ input:checked + label {
   width: 600px;
 }
 
-input:checked + label .description {
+input:checked + label .description  {
   opacity: 1 !important;
   transform: translateY(0) !important;
+}
+
+input:checked + label .icon{
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+
 }
 
 .card[for="c1"] {
@@ -133,7 +137,7 @@ input:checked + label .description {
 .section-label {
   font-size: 3rem;
   font-weight: 700;
-  color: white;
+  color: black;
   margin-bottom: 30px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -168,11 +172,10 @@ input:checked + label .description {
   font-weight: 600;
   transition: background-color 0.3s ease;
   width: fit-content;
-  
 }
 
-.ex{
-    display: flex;
+.ex {
+  display: flex;
 }
 
 .description a:hover {
@@ -222,4 +225,75 @@ input:checked + label .description {
 
 span {
   color: var(--light-brown);
+}
+
+@media (max-width: 600px) {
+  body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section-label {
+    font-size: 1.8rem;
+    padding: 0;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .wrapper {
+    height: auto; 
+    padding: 10px;
+    display: block; /* تغيير من flex لـ block عشان نتحكم في الحاوية بالداخل */
+  }
+
+  .container {
+    flex-direction: column;
+    height: 550px; /* تحديد ارتفاع ثابت للمجموعة عشان الـ Flex يشتغل صح */
+    width: 95vw;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .card {
+    width: 100% !important; /* العرض دايماً كامل */
+    margin: 5px 0;
+    flex: 1; /* الحجم الطبيعي وهي مقفولة */
+    /* الـ Bezier السحري اللي طلبته */
+    transition: flex 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+                filter 0.5s ease;
+    filter: brightness(0.6);
+    border-radius: 1.5rem;
+  }
+
+  /* ده الجزء المسؤول عن الحركة لما تختار الصورة (الراديو بوتون) */
+  input:checked + label {
+    flex: 4 !important; /* الكارت المفتوح ياخد مساحة أكبر */
+    filter: brightness(1);
+    width: 100% !important; /* لضمان عدم التداخل */
+  }
+
+  .card .row .description {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    /* تأخير بسيط في ظهور النص عشان الصورة تفتح الأول */
+    transition: opacity 0.4s ease 0.3s, transform 0.4s ease 0.3s;
+  }
+
+  /* تعديل مكان الأيقونة (الرقم) في الموبايل عشان ميزاحمش النص */
+  .card .row .icon {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    font-size: 0.9rem;
+  }
+
+  .card .row .icon{
+    width: 3rem;
+  }
+
+  
 }
