@@ -115,19 +115,19 @@ input:checked + label .description {
 }
 
 .card[for="c1"] {
-  background-image: url("ph/breakfast.png");
+  background-image: url("ph/breakfast.webp");
 }
 
 .card[for="c2"] {
-  background-image: url("ph/ju.png");
+  background-image: url("ph/ju.webp");
 }
 
 .card[for="c3"] {
-  background-image: url("ph/smo.png");
+  background-image: url("ph/smo.webp");
 }
 
 .card[for="c4"] {
-  background-image: url("ph/milkk.png");
+  background-image: url("ph/milkk.webp");
 }
 
 .section-label {
