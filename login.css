@@ -28,7 +28,7 @@
   border: 5px solid rgb(255, 255, 255);
   box-shadow: #a67c52 0px 30px 30px -20px;
   margin: auto auto;
-  height: 50vh;
+  height: auto;
 }
 
 body {
@@ -250,5 +250,38 @@ body {
 
   .forget label input {
     margin-top: 10px;
+  }
+
+  .container{
+    width: auto;
+    max-width: 1000px;
+    height: 57vh;
+    max-width: 63vw;
+  }
+
+  .heading{
+    font-size: 1.9em;
+  }
+
+  .form .input{
+    font-size: 0.8em;
+  }
+
+  .form .forgot-password a{
+    font-size: 0.8em;
+  }
+
+  .form .login-button{
+    font-size: 0.9em;
+  }
+
+  .social-account-container .social-accounts
+  .social-button{
+    margin-top: 0;
+    height: auto;
+  }
+
+  .agreement{
+    font-size: 0.8em;
   }
 }
