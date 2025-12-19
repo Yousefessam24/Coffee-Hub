@@ -253,10 +253,11 @@ body {
   }
 
   .container{
-    width: auto;
+    width: 70vw;
     max-width: 1000px;
     height: 57vh;
-    max-width: 63vw;
+    
+    padding: 25px 20px;
   }
 
   .heading{
@@ -265,6 +266,7 @@ body {
 
   .form .input{
     font-size: 0.8em;
+    padding: 15px 7px;
   }
 
   .form .forgot-password a{
