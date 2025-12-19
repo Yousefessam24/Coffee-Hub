@@ -262,6 +262,7 @@ body {
     max-width: 1000px;
     height: auto;
     max-width: 63vw;
+    padding: 25px 20px;
   }
 
   .heading{
@@ -288,5 +289,9 @@ body {
 
   .agreement{
     font-size: 0.8em;
+  }
+
+  .form .input{
+    padding: 15px 7px;
   }
 }
