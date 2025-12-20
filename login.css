@@ -204,6 +204,7 @@ body {
     padding: 5px;
     height: auto;
     margin: auto;
+    
   }
 
   body{
@@ -215,6 +216,10 @@ body {
     width: 90%;
     margin: 30px auto;
     margin-top: 10px;
+  }
+
+  .form{
+    margin-top: 0;
   }
 
   h2 {
@@ -262,9 +267,10 @@ body {
   .container{
     width: 70vw;
     max-width: 1000px;
-    height: auto;
+    height: auto auto;
     margin: auto;
-    padding: 25px 20px;
+    padding: 20px 20px;
+    
   }
 
   .heading{
@@ -273,7 +279,8 @@ body {
 
   .form .input{
     font-size: 0.8em;
-    padding: 15px 7px;
+    padding: 10px 7px;
+    border-radius: 10px;
   }
 
   .form .forgot-password a{
@@ -282,15 +289,19 @@ body {
 
   .form .login-button{
     font-size: 0.9em;
+    margin: 0.9rem auto;
+    padding: 0.5rem;
   }
 
   .social-account-container .social-accounts
   .social-button{
     margin-top: 0;
-    height: auto;
+    height: 2.4rem;
+    width: auto;
   }
 
   .agreement{
     font-size: 0.8em;
+    margin-top: 1.3rem;
   }
 }
