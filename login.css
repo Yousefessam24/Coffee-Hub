@@ -201,7 +201,11 @@ body {
     justify-content: center;
     text-align: center;
     padding: 5px;
-    height: 450px;
+    height: auto;
+  }
+
+  body{
+    overflow: hidden;
   }
 
   .inputbox {
@@ -255,7 +259,7 @@ body {
   .container{
     width: 70vw;
     max-width: 1000px;
-    height: 57vh;
+    height: auto;
     
     padding: 25px 20px;
   }

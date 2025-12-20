@@ -206,8 +206,13 @@ body {
     justify-content: center;
     text-align: center;
     padding: 5px;
-    height: 450px;
+    height: auto;
   }
+
+  body{
+    overflow: hidden;
+  }
+  
 
   .inputbox {
     width: 90%;
@@ -258,10 +263,10 @@ body {
   }
 
   .container{
-    width: auto;
+    width: 70vw;
     max-width: 1000px;
     height: auto;
-    max-width: 63vw;
+    
     padding: 25px 20px;
   }
 
