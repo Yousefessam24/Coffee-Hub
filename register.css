@@ -270,7 +270,11 @@ body {
     max-width: 1000px;
     height: auto;
     margin: auto;
-    padding: 25px 20px;
+    padding: 20px 20px;
+  }
+
+  .form{
+    margin-top: 0;
   }
 
   .heading{
@@ -279,6 +283,8 @@ body {
 
   .form .input{
     font-size: 0.8em;
+    padding: 10px 7px;
+    border-radius: 10px;
   }
 
   .form .forgot-password a{
@@ -287,19 +293,22 @@ body {
 
   .form .login-button{
     font-size: 0.9em;
+     margin: 0.9rem auto;
+     padding: 0.5rem;
   }
 
   .social-account-container .social-accounts
   .social-button{
     margin-top: 0;
     height: auto;
+    height: 2.4rem;
+    width: auto;
   }
 
   .agreement{
     font-size: 0.8em;
+    margin-top: 1.3rem;
   }
 
-  .form .input{
-    padding: 15px 7px;
-  }
+ 
 }
