@@ -37,6 +37,7 @@ body {
   height: 100vh;
   align-items: center;
   justify-content: center;
+  
 }
 
 .heading {
@@ -207,10 +208,12 @@ body {
     text-align: center;
     padding: 5px;
     height: auto;
+    margin: auto;
   }
 
   body{
     overflow: hidden;
+    background-position-x: 1600px;
   }
   
 
@@ -266,7 +269,7 @@ body {
     width: 70vw;
     max-width: 1000px;
     height: auto;
-    
+    margin: auto;
     padding: 25px 20px;
   }
 
