@@ -97,6 +97,7 @@ body {
 
 .description h4 {
   text-transform: uppercase;
+  margin-left: -17vw;
 }
 
 input {
@@ -319,6 +320,7 @@ span {
 
   .description h4{
     margin-bottom: -9vh;
+    
   }
 
   .card .row{
