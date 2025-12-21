@@ -583,7 +583,7 @@ html {
   }
 
   #menu .row .col .item .price {
-    padding-right: 10px;
+    padding-right: 1.5rem;
   }
 
   #header .navbar ul li a:hover {
