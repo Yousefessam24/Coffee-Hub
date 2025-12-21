@@ -13,14 +13,22 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <link rel="shortcut icon" href="ch.png" type="image/x-icon" />
   </head>
   <body>
     <header id="header">
       <nav class="navbar">
-        <a href="#home"
-          ><img src="ph/Coffee Hub (2).webp" alt="coffee hub" class="logo"
-        /></a>
+        <div class="top">
+          <a href="#home"
+            ><img src="ph/Coffee Hub (2).webp" alt="coffee hub" class="logo"
+          /></a>
+          <div class="acc">
+            <a href="index.html" class="login">Log in</a>
+            <a href="register.html" class="signup">Sign up</a>
+          </div>
+        </div>
+
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#menu">Menu</a></li>
@@ -29,7 +37,9 @@
           <li><a href="#footer">About us</a></li>
           <div class="lr">
             <li class="login"><a class="login" href="index.html">Login</a></li>
-            <li class="signup"><a class="sign up" href="register.html">Sign up</a></li>
+            <li class="signup">
+              <a class="sign up" href="register.html">Sign up</a>
+            </li>
           </div>
         </ul>
       </nav>
@@ -74,9 +84,7 @@
               <img src="ph/menu-1.png" />
               <div class="details">
                 <h3>Espresso</h3>
-                <p>
-                  A strong, rich coffee.
-                </p>
+                <p>A strong, rich coffee.</p>
               </div>
               <div class="price">
                 <p id="price" style="color: #c7a17a">30<span>EGP</span></p>
@@ -86,9 +94,7 @@
               <img src="ph/menu-2.png" />
               <div class="details">
                 <h3>Americano</h3>
-                <p>
-                  Espresso mixed with hot water.
-                </p>
+                <p>Espresso mixed with hot water.</p>
               </div>
               <div class="price">
                 <p id="price" style="color: #c7a17a">45<span>EGP</span></p>
@@ -98,9 +104,7 @@
               <img src="ph/menu-3.png" />
               <div class="details">
                 <h3>Cappuccino</h3>
-                <p>
-                  A balanced mix of espresso and steamed milk.
-                </p>
+                <p>A balanced mix of espresso and steamed milk.</p>
               </div>
               <div class="price">
                 <p id="price" style="color: #c7a17a">50<span>EGP</span></p>
@@ -110,9 +114,7 @@
               <img src="ph/menu-4.png" />
               <div class="details">
                 <h3>French Coffee</h3>
-                <p>
-                  A balanced mix of espresso, steamed milk.
-                </p>
+                <p>A balanced mix of espresso, steamed milk.</p>
               </div>
               <div class="price">
                 <p id="price" style="color: #c7a17a">35<span>EGP</span></p>
@@ -124,9 +126,7 @@
               <img src="ph/menu-5.png" />
               <div class="details">
                 <h3>Turkish Coffee</h3>
-                <p>
-                  A strong, rich coffee.
-                </p>
+                <p>A strong, rich coffee.</p>
               </div>
               <div class="price">
                 <p id="price" style="color: #c7a17a">25<span>EGP</span></p>
@@ -136,9 +136,7 @@
               <img src="ph/menu-6.png" />
               <div class="details">
                 <h3>Flat white</h3>
-                <p>
-                  Similar to a latte but with a higher ratio of espresso.
-                </p>
+                <p>Similar to a latte but with a higher ratio of espresso.</p>
               </div>
               <div class="price">
                 <p id="price" style="color: #c7a17a">40<span>EGP</span></p>
@@ -148,9 +146,7 @@
               <img src="ph/menu-7.png" />
               <div class="details">
                 <h3>Cortado</h3>
-                <p>
-                  A perfect balance of espresso and warm milk.
-                </p>
+                <p>A perfect balance of espresso and warm milk.</p>
               </div>
               <div class="price">
                 <p id="price" style="color: #c7a17a">60<span>EGP</span></p>
@@ -160,9 +156,7 @@
               <img src="ph/menu-8.png" />
               <div class="details">
                 <h3>Mocha</h3>
-                <p>
-                  A sweet blend of espresso, steamed milk.
-                </p>
+                <p>A sweet blend of espresso, steamed milk.</p>
               </div>
               <div class="price">
                 <p id="price" style="color: #c7a17a">50<span>EGP</span></p>
@@ -296,72 +290,77 @@
               </ul>
             </div>
             <div class="al">
-               <div class="col">
-              <h3>Quick Links</h3>
-              <ul>
-                <li>
-                  <a href="#home"><label style="color: white">Home</label></a>
-                </li>
-                <li>
-                  <a href="#menu"><label style="color: white">Menu</label></a>
-                </li>
-                <li>
-                  <a href="#best-sellers"
-                    ><label style="color: white">Best sellers</label></a
-                  >
-                </li>
-                <li>
-                  <a href="#contact"
-                    ><label style="color: white">Contact</label></a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="col">
-              <h3>Follow us on</h3>
-              <ul>
-                <li>
-                  <a href=""
-                    ><i class="fa-brands fa-facebook" style="color: white"></i
-                    ><label style="color: white">Facebook</label></a
-                  >
-                </li>
-                <li>
-                  <a href=""
-                    ><i class="fa-brands fa-twitter" style="color: white"></i
-                    ><label style="color: white">Twitter</label></a
-                  >
-                </li>
-                <li>
-                  <a href=""
-                    ><i class="fa-brands fa-youtube" style="color: white"></i
-                    ><label style="color: white">Youtube</label></a
-                  >
-                </li>
-                <li>
-                  <a href=""
-                    ><i class="fa-brands fa-instagram" style="color: white"></i
-                    ><label style="color: white">Instagram</label></a
-                  >
-                </li>
-                <li>
-                  <a href=""
-                    ><i class="fa-brands fa-pinterest" style="color: white"></i
-                    ><label style="color: white">Pinterest</label></a
-                  >
-                </li>
-              </ul>
+              <div class="col">
+                <h3>Quick Links</h3>
+                <ul>
+                  <li>
+                    <a href="#home"><label style="color: white">Home</label></a>
+                  </li>
+                  <li>
+                    <a href="#menu"><label style="color: white">Menu</label></a>
+                  </li>
+                  <li>
+                    <a href="#best-sellers"
+                      ><label style="color: white">Best sellers</label></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#contact"
+                      ><label style="color: white">Contact</label></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col">
+                <h3>Follow us on</h3>
+                <ul>
+                  <li>
+                    <a href=""
+                      ><i class="fa-brands fa-facebook" style="color: white"></i
+                      ><label style="color: white">Facebook</label></a
+                    >
+                  </li>
+                  <li>
+                    <a href=""
+                      ><i class="fa-brands fa-twitter" style="color: white"></i
+                      ><label style="color: white">Twitter</label></a
+                    >
+                  </li>
+                  <li>
+                    <a href=""
+                      ><i class="fa-brands fa-youtube" style="color: white"></i
+                      ><label style="color: white">Youtube</label></a
+                    >
+                  </li>
+                  <li>
+                    <a href=""
+                      ><i
+                        class="fa-brands fa-instagram"
+                        style="color: white"
+                      ></i
+                      ><label style="color: white">Instagram</label></a
+                    >
+                  </li>
+                  <li>
+                    <a href=""
+                      ><i
+                        class="fa-brands fa-pinterest"
+                        style="color: white"
+                      ></i
+                      ><label style="color: white">Pinterest</label></a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-            </div>
-              
-           
+
       <div class="copy">
         <p>
           &copy; All rights reserved /// Made by
-          <strong><a> YOUSEF ESSAM // OMAR TAWFEQ // YOUSEF ATEF</a></strong>
+          <strong><a> YOUSEF ESSAM </a></strong>
         </p>
       </div>
     </footer>
