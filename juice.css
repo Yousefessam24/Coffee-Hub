@@ -596,10 +596,15 @@ html {
 
   #header .navbar .logo {
     margin-bottom: 10px;
-    height: 7vh;
+    height: 8vh;
     width: auto;
   }
-
+  
+  #header .navbar ul li a {
+    font-size: 0.8rem;
+    margin: 5px 10px;
+  }
+  
   #header .navbar .lr {
     display: flex;
     flex-direction: column;

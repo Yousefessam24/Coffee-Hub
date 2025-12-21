@@ -52,6 +52,12 @@ a {
   border-bottom: 1px solid #ccc;
 }
 
+.acc {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
 #header .navbar {
   display: flex;
   justify-content: space-between;
@@ -847,7 +853,57 @@ html {
     height: 0;
   }
 
-  #footer .copy{
-    padding: 30px 20px;
+  #footer .copy {
+    padding: 30px 10px;
+  }
+
+  #footer .copy p {
+    font-size: 0.9em;
+  }
+
+  .acc {
+    visibility: visible;
+    margin-left: 1rem;
+    
+    width: 5rem;
+  }
+
+  .top {
+    display: flex;
+    margin-left: 18vw;
+  }
+
+  #header .navbar .top .acc .login {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    background-color: #a67c52;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+    margin-top: 1rem;
+    width: 60px;
+    border: 2px solid white;
+    font-size: 0.5em;
+  }
+
+  #header .navbar .top .acc .signup {
+    width: 50px;
+    display: flex;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    background-color: white;
+    border: 2px solid #a67c52;
+    color: #a67c52;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+    margin-top: 1rem;
+    font-size: 0.5em;
   }
 }

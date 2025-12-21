@@ -17,7 +17,7 @@
 
 body {
   background-color: var(--bg-secondary);
-  background-image: url(ph/Gemini_Generated_Image_el7i03el7i03el7i.webp);
+  background-image: url(ph/bmm6.webp);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -134,20 +134,33 @@ input:checked + label .icon{
   background-image: url("ph/milkk.webp");
 }
 
-.section-label {
-  font-size: 3rem;
+.main .section-label {
+  font-size: 2rem;
   font-weight: 700;
-  color: black;
-  margin-bottom: 30px;
+  color: white;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
   position: relative;
   display: inline-block;
   align-self: center;
   margin: auto;
-  padding-top: 30px;
-  padding-left: 40%;
+  padding-bottom: 3vh;
+  padding: auto 3vh auto auto;
+  
+
 }
+
+body{
+  text-align: center;
+}
+
+.main{
+ margin: auto;
+ margin-top: 6vh;
+ align-items: center;
+}
+ 
 
 .section-label::after {
   content: "";
@@ -234,6 +247,7 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-image: url(ph/Gemini_Generated_Image_el7i03el7i03el7i.webp);
   }
 
   .section-label {
@@ -241,6 +255,10 @@ span {
     padding: 0;
     margin: 20px auto;
     text-align: center;
+  }
+
+  .main .section-label{
+    color: #333;
   }
 
   .wrapper {
@@ -266,6 +284,7 @@ span {
                 filter 0.5s ease;
     filter: brightness(0.6);
     border-radius: 1.5rem;
+    text-align: left;
   }
 
   /* ده الجزء المسؤول عن الحركة لما تختار الصورة (الراديو بوتون) */
@@ -281,7 +300,32 @@ span {
     padding-bottom: 20px;
     /* تأخير بسيط في ظهور النص عشان الصورة تفتح الأول */
     transition: opacity 0.4s ease 0.3s, transform 0.4s ease 0.3s;
+    font-size: 0.8em;
+    
   }
+
+  .description a{
+    width: 40vw;
+    height: 4.5vh;
+    text-align: center;
+    
+    margin-top: 10vh;
+  }
+
+  .description p{
+    width: 35vw;
+    margin-top: 9vh;
+  }
+
+  .description h4{
+    margin-bottom: -9vh;
+  }
+
+  .card .row{
+    max-height: 12vh;
+  }
+
+  
 
   /* تعديل مكان الأيقونة (الرقم) في الموبايل عشان ميزاحمش النص */
   .card .row .icon {
@@ -289,6 +333,7 @@ span {
     height: 40px;
     margin: 10px;
     font-size: 0.9rem;
+    margin-top: 2vh;
   }
 
   .card .row .icon{

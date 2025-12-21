@@ -573,6 +573,11 @@ html {
     font-size: 17px;
   }
 
+  #header .navbar ul li a {
+    font-size: 0.8rem;
+    margin: 5px 10px;
+  }
+
   #menu .row .col .item .details p {
     font-size: 11px;
   }
@@ -596,7 +601,7 @@ html {
 
   #header .navbar .logo {
     margin-bottom: 10px;
-    height: 7vh;
+    height: 8vh;
     width: auto;
   }
 
